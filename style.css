@@ -1,0 +1,231 @@
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    color: #323538
+  }
+
+
+header{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    color: white;
+}
+header .container{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+header .logo{
+    font-size: 24px;
+    font-weight: 600;
+}
+header ul {
+    display: flex;
+}
+header li {
+    margin-left: 50px;
+    font-weight: 600;
+}
+
+header ul li a{
+    transition:  .3s;
+}
+header ul li a:hover{
+    color: rgb(84, 84, 255);
+}
+@media screen and (max-width: 767px){
+    header nav {display: none;}
+}
+
+/*共通で使うもの*/
+.container{
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.section {
+    padding: 60px 0;
+}
+.en{
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(84, 84, 255);
+    margin-bottom: 30px;
+}
+.text{
+    font-size: 15px;
+    line-height: 2;
+}
+.button{
+    display: inline-block;
+    border: solid 1px #eeeeee;
+    background-color: #ffffff;
+    padding: 15px 40px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 600px;
+    transition: .3s;
+}
+.button:hover{
+    border-color: rgb(84, 84, 255);
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 767px){
+    .en{
+        font-size: 30px;
+    }
+    .section{
+        padding: 30px 0;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+    .col{
+        width: 100% !important;
+    }
+}
+
+
+/*メイン*/
+#main-visual{
+    position: relative;
+    height: 90vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+}
+#main-visual video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+#main-visual .box{
+    position: absolute;
+    top:50%;
+    left:13%;
+    transform: translateY(-50%);
+    color: white;
+}
+#main-visual .heading{
+    font-size: 30px;
+    font-weight: 600px;
+    margin-bottom: 20px;
+}
+#main-visual h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+@media screen and (max-width: 767px){
+    #main-visual .box{
+        left:6%;
+    }
+    #main-visual .heading{
+        font-size: 15px;
+    }
+    #main-visual h1{
+        font-size: 35px;
+        font-weight: 800
+    }
+}
+
+#MENU1{
+    position: relative;
+    overflow: hidden;
+}
+#MENU1::before{
+    content: 'MENU1MENU1';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 300px;
+    color: #f9f9f9;
+    font-weight: 900;
+    z-index: -1;
+}
+
+#MENU1 h2{
+    font-size: 30px;
+    font-weight: 600px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+#MENU1 .text{
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px){
+    #MENU1::before{
+        font-size: 80px;
+    }
+    #MENU1 h2{
+        font-size: 18px;
+    }
+}
+
+
+#MENU2{
+    background-color: rgb(84, 84, 255);
+    border-radius: 20px;
+    color: #ffffff;
+}
+#MENU2 h2{
+    color: #ffffff;
+}
+#MENU2 .text{
+    margin-bottom: 60px;
+}
+#MENU2 .row{
+    margin-bottom: 30px;
+}
+#MENU2 .col{
+    width: 32%;
+    background-color: rgb(57, 57, 255);
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+}
+#MENU2 img{
+    height: 80px;
+    margin-bottom: 20px;
+}
+#MENU2 h3{
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+#MENU2 .text2{
+    font-size: 15px;
+    text-align: left;
+    line-height: 1.6;
+}
+#MENU2 .button {
+    text-align: center;
+    color: #323538;
+}
+#MENU2 .button:hover{
+    background-color: #c6c6c6;
+}
+@media screen and (max-width: 767px){
+    #MENU2 .row{
+        gap: 20px 0;
+    }
+}
+
+.footer{
+    padding: 2rem;
+    font-size: 15px;
+    color: #999;
+    background: #fff;
+    border-top: 1px solid #e5e7eb;
+}
