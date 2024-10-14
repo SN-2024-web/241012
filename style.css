@@ -35,7 +35,7 @@ header ul li a{
     transition:  .3s;
 }
 header ul li a:hover{
-    color: rgb(84, 84, 255);
+    color:#FD8B51;
 }
 @media screen and (max-width: 767px){
     header nav {display: none;}
@@ -53,7 +53,7 @@ header ul li a:hover{
 .en{
     font-size: 50px;
     font-weight: 600;
-    color: rgb(84, 84, 255);
+    color: #FD8B51;
     margin-bottom: 30px;
 }
 .text{
@@ -71,7 +71,7 @@ header ul li a:hover{
     transition: .3s;
 }
 .button:hover{
-    border-color: rgb(84, 84, 255);
+    border-color: #FD8B51;
 }
 .row {
     display: flex;
@@ -144,7 +144,7 @@ header ul li a:hover{
     overflow: hidden;
 }
 #MENU1::before{
-    content: 'MENU1MENU1';
+    content: 'for a Sustainable Future';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -176,7 +176,8 @@ header ul li a:hover{
 
 
 #MENU2{
-    background-color: rgb(84, 84, 255);
+    background-color:
+    #FD8B51;
     border-radius: 20px;
     color: #ffffff;
 }
@@ -191,7 +192,7 @@ header ul li a:hover{
 }
 #MENU2 .col{
     width: 32%;
-    background-color: rgb(57, 57, 255);
+    background-color:#CB6040;
     border-radius: 16px;
     padding: 30px 20px;
     text-align: center;
@@ -228,4 +229,76 @@ header ul li a:hover{
     color: #999;
     background: #fff;
     border-top: 1px solid #e5e7eb;
+}
+
+#MENU3 {
+    background-color: #f9f9f9;
+}
+
+#MENU3 h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+#MENU3 .text {
+    font-size: 13px;
+    margin-bottom: 40px;
+}
+
+#MENU3 .row {
+    align-items: center;
+}
+
+#MENU3 .col {
+    width: 48%;
+}
+
+#MENU3 img { 
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 767px){
+    #MENU3 h2{
+        font-size: 20px;
+    }
+    #MENU3 .row{
+        gap: 30px;
+    }
+}
+
+#MENU4 h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+#MENU4 .text {
+    font-size: 13px;
+    margin-bottom: 40px;
+}
+
+#MENU4 .row {
+    align-items: center;
+}
+
+#MENU4 .col {
+    width: 48%;
+}
+
+#MENU4 img { 
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 767px){
+    #MENU4 h2{
+        font-size: 20px;
+    }
+    #MENU4 .row{
+        gap: 30px;
+        flex-direction: column-reverse;
+    }
+    
 }
